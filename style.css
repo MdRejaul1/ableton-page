@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+
+.container{
+ min-width: 1200px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    padding: 20px 5px 20px 5px;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  
+   
+
+}
+
+.nav-list li a{
+    color: black;
+    font-weight: 700;
+}
+
+.h-part1, .h-part2 {
+    display: flex;
+    gap: 1em;
+
+}
+
+.btn-reset{
+    border: none;
+    font-size: 1rem;
+    color: chocolate;
+    font-weight: 500;
+    background-color: white;
+
+}
+
+.account-item  a, .logout-item   a {
+    color: black;
+    font-weight: 700;
+}
+
+.about-section{
+    display: flex;
+    gap: 1em;
+    justify-content: start;
+    padding-top: 1em;
+    padding-left: 1em;
+
+}
+
+.about-section li{
+    font-weight: 500;
+  
+}
+
+.about-section li:first-child {
+    color: chocolate;
+}
+
+.Ableton-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-image: url(assets/header.jpg);
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ background-size: cover;
+ max-width: 80%;
+ height: 80dvh;
+ margin: auto;
+ margin-top: 2rem;
+   
+ 
+}
+
+.Ableton-section{
+  font-size: 8rem;
+  color: chocolate;
+}
+
+
+.music-company-intro,  .music-effort-section, .stuff-section, .outstanding-instruments , .deeds  {
+   
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+   
+}
+
+.music-company-intro h3, .music-effort-section h3, .stuff-section h3, .outstanding-instruments h3, .deeds h3 {
+  font-size: 1.3rem ;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 1rem;
+}
+
+.music-company-intro p, .music-effort-section p, .stuff-section p, .deeds p {
+    margin-bottom: 8rem;
+    line-height: 1.8rem;
+}
+
+.employees {
+   
+    max-width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+   
+}
+
+
+.employees  h3 {
+    font-size: 1.3rem ;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+  }
+
+  .employees p {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8rem;
+    line-height: 1.8rem;
+}
+
+
+
+
+.hero-img-1{
+
+    max-width: 100%;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.yellow{
+    position: absolute;
+     max-width: 100%;
+    top: -80px;
+    bottom: -80px;
+    right: 0;
+    left:  33% ;
+    background-color: rgb(243, 243, 177);
+    z-index: -0;
+}
+
+.hero-img-lft{
+  max-width: 36%;
+  max-height: 400px;
+  z-index: 1;
+}
+
+.hero-img-rgt{
+    max-width: 30%; 
+    max-height: 250px;
+    z-index: 1;
+}
+
+
+.hero-img-rgt{
+    align-self: center;
+}
+
+.bg-yellow{
+    position: absolute;
+ 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -0;
+}
+
+.yt-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.yt-video div p{
+    margin-top: 0.3rem;
+    padding-left: 1em;
+}
+
+.three-img-section {
+    position: relative;
+    max-width: 100%;
+    height: 600px; /* Set a fixed height to prevent content overflow */
+    margin-bottom: 9rem;
+}
+
+.three-img-section .man {
+    position: absolute;
+    width: 350px;  /* Use width instead of max-width for consistency */
+    height: 300px; /* Same here */
+    z-index: 44;
+    top: -30px;
+    left: 5rem;
+}
+
+.three-img-section .albeton {
+    position: absolute;
+    width: 350px; 
+    height: 300px;
+    z-index: 44;
+    bottom: -30px;
+    left: 5rem;
+}
+
+.three-img-section .woman {
+    position: absolute;
+    right: 6rem;
+    top: 0;
+    width: 550px;
+    height: 620px;
+    z-index: 44;
+}
+
+.three-img-section div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images maintain aspect ratio without distortion */
+}
+
+.light-green {
+    position: absolute;
+    top: -110px;
+    bottom: -110px;
+    right: 33%;
+    left: 0;
+    background-color: rgb(174, 224, 174);
+    z-index: 22;
+  
+}
+
+
+.poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-image: url(assets/poster-meet-the-makers.jpg);
+ background-repeat: no-repeat;
+ background-position: 50% 50%;
+ background-size: cover;
+ max-width: 80%;
+ height: 80dvh;
+ margin: auto;
+ margin-top: 2rem;
+   
+ 
+}
+
+.Ableton-live-9{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     background-image: url(assets/photo-82.jpg);
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     background-size: cover;
+     max-width: 80%;
+     height: 130dvh;
+     margin: auto;
+     margin-top: 2rem;
+       
+     
+    }
+    
+
+    .latest-job-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+        background-color: #B1C5FF;
+        height: 250px;
+        padding: 0 10em 0 10em;
+        margin-top: -1rem;
+          
+    }
+
+    .latest-job-section div a{
+        display: inline-block;
+        margin-top: 1rem;
+        color: blue;
+
+    }
+
+    .registration{
+        max-width: 80%;
+        margin: auto;
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       margin-top: 3rem;
+    }
+
+.icons{
+  display: flex;
+   gap: 1rem;
+    }
+
+
+    .icons img{
+        width: 30px;
+    }
+
+   .community{
+
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+   }
+
+   .contact-container{
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12rem;
+    margin-top: 5rem;
+}
+   
+
+   .contact {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.9rem;
+
+   }
+
+   .logo-barlin-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 0.7rem;
+   }
+
+   .logo-barlin-container  p{
+    white-space: nowrap;
+   }
+
+   .main-svg__logo__image{
+    width: 40px;
+    height: 40px;
+   }
+
+   .wrapper-1, .Education, .newsletter, .community {
+    line-height: 1.6;
+   }
+
+   form{
+    display: flex;
+   }
+
+   input {
+    padding: 1px 4px;
+    background-color: #f4f5f8;
+    border: none;
+    font-weight: bold;
+    
+   }
+   label{
+    padding: 1px 25px;
+    background-color: blue;
+    border-radius: 0 2px 2px 0;
+   color: white;
+   }
+
+   .form-container{
+    display: flex;
+    gap: 4px;
+   }
+
+   select {
+    padding: 3px 8px;
+    background-color: #f4f5f8;;
+   }
+
+   select#contry{
+    padding: 1px  35px 1px 2px;
+    background-color: #f4f5f8;;
+    
+
+   }
+
+
+   .hero-img-2{
+
+    max-width: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 9em;
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.purple{
+    position: absolute;
+     max-width: 100%;
+    top: -80px;
+    bottom: -80px;
+    right:  10%;
+    left:   20%;
+    background-color: #D5B3FF;
+    z-index: -0;
+}
+
+.hero-img-lft1 {
+    width: 45vw; /* 38% of viewport width */
+    height: 400px;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.hero-img-rgt2 {
+    width: 35vw; /* 35% of viewport width */
+    height: 280px;
+    z-index: 1;
+    object-fit: cover;
+}
+
+
+
+.hero-img-rgt{
+    align-self: center;
+}
+
+.bg-yellow{
+    position: absolute;
+ 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -0;
+}
+
+
